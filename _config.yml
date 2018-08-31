@@ -1,7 +1,7 @@
 # Site settings
 title: Ardeal Blog
 SEOTitle: Ardeal的博客 | Ardeal Blog
-header-img: img/home_bg_ardeal.png
+header-img: #img/home_bg_ardeal.png
 email: dpstill@126.com
 description: "Ph.D. @ Artificial Intelligence"
 keyword: "AI, Pattern Recognition, Machine Learning, Deep Learning"
