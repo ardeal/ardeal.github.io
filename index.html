@@ -28,8 +28,8 @@ body{
     text-align:center;
 
     /* 顶部空白压缩 */
-    padding-top:30px;
-    padding-bottom:26px;
+    padding-top:28px;
+    padding-bottom:24px;
 }
 
 .hero h1{
@@ -39,10 +39,10 @@ body{
 }
 
 .hero h2{
-    font-size:1.15rem;
+    font-size:1.1rem;
     font-weight:400;
     color:#cbd5e1;
-    margin-bottom:5px;
+    margin-bottom:4px;
 }
 
 .hero p{
@@ -54,7 +54,7 @@ body{
 
 .container{
     width:90%;
-    max-width:1100px;
+    max-width:1150px;
     margin:auto;
 }
 
@@ -72,10 +72,6 @@ body{
     color:#0f172a;
     border-bottom:2px solid #e2e8f0;
     padding-bottom:8px;
-}
-
-.section p{
-    margin-bottom:14px;
 }
 
 .section ul{
@@ -103,7 +99,7 @@ body{
 .contact-label{
     font-weight:bold;
     display:inline-block;
-    width:160px;
+    width:170px;
     color:#0f172a;
 }
 
@@ -122,8 +118,6 @@ footer{
     color:#64748b;
 }
 
-/* ===== MOBILE ===== */
-
 @media(max-width:768px){
 
     .hero h1{
@@ -141,7 +135,6 @@ footer{
     .contact-label{
         width:120px;
     }
-
 }
 
 </style>
@@ -176,23 +169,22 @@ Formerly at Intel Corporation
 <h3>About Me</h3>
 
 <p>
-I received my Ph.D. in Communication and Information Systems from the Chinese Academy of Sciences and my Bachelor degree in Telecommunication Engineering from Wuhan University.
+Ph.D. in Communication and Information Systems from the Chinese Academy of Sciences.
+Research interests include Deep Learning, Large Language Models (LLM),
+Edge AI, TinyML, Sparse AI, Embedded Machine Learning,
+and Gesture Recognition.
 </p>
 
 <p>
-My research and engineering experience spans Deep Learning, Large Language Models (LLM), Edge AI, TinyML, Sparse AI, Embedded Machine Learning, Gesture Recognition, and low-power AI acceleration systems.
+Previously worked at Intel Shanghai as a Senior Algorithms Engineer
+focusing on AI algorithms, wearable-device gesture recognition,
+computer vision, and embedded AI optimization using Python and C/C++.
 </p>
 
 <p>
-I previously worked at Intel Shanghai as a Senior Algorithms Engineer, focusing on wearable-device gesture recognition, deep learning algorithms, computer vision, and embedded AI optimization using Python and C/C++.
-</p>
-
-<p>
-I have also led and commercialized multiple industrial AI systems across Moffett AI, Chaoyang Semiconductor, Shanghai Electric, and startup environments, including sparse neural network acceleration, AI chip optimization, subway infrastructure AI systems, and ultra-lightweight edge AI deployments.
-</p>
-
-<p>
-Available for academic reviewing and technical collaboration in Deep Learning, Machine Learning, NLP, Large Language Models, Attention mechanisms, Edge AI, TinyML, Sparse AI, and Embedded AI systems.
+Led and commercialized multiple industrial AI systems across
+Moffett AI, Chaoyang Semiconductor, Shanghai Electric,
+and startup environments.
 </p>
 
 </section>
@@ -221,14 +213,7 @@ Bachelor Degree in Telecommunication Engineering (2000–2004)
 <!-- LINKS -->
 <section class="section">
 
-<h3>Professional Profiles & Contact</h3>
-
-<div class="contact-item">
-<span class="contact-label">Email:</span>
-<a href="mailto:dpstill@126.com">
-dpstill@126.com
-</a>
-</div>
+<h3>Links</h3>
 
 <div class="contact-item">
 <span class="contact-label">LinkedIn:</span>
@@ -365,51 +350,34 @@ American Patent, 2015.
 
 </section>
 
-<!-- INDUSTRIAL CONTRIBUTIONS -->
+<!-- RESEARCH -->
 <section class="section">
 
-<h3>Selected Industrial Contributions</h3>
+<h3>Research Interests</h3>
 
-<div class="highlight">
+<ul>
 
-<strong>Moffett AI</strong><br><br>
+<li>Deep Learning</li>
 
-Led sparse AI optimization and data architecture for sparse acceleration platforms.
-Developed block-based parameter separation algorithms combined with Knowledge Distillation,
-achieving significant acceleration for neural network training and inference.
-The sparse AI chips were integrated into high-performance servers from Inspur.
+<li>Machine Learning</li>
 
-</div>
+<li>Large Language Models (LLM)</li>
 
-<div class="highlight">
+<li>Natural Language Processing (NLP)</li>
 
-<strong>Chaoyang Semiconductor</strong><br><br>
+<li>Edge AI</li>
 
-Served as System AI Architect to optimize RAM sizing and power consumption for AI chips.
-The optimized chips were commercialized at large scale and deployed in products from Transsion,
-one of the largest smartphone vendors in Africa.
+<li>TinyML</li>
 
-</div>
+<li>Sparse AI</li>
 
-<div class="highlight">
+<li>Embedded Machine Learning</li>
 
-<strong>Shanghai Electric</strong><br><br>
+<li>Gesture Recognition</li>
 
-Independently developed and productionized an automated subway meter recognition system.
-Manually optimized deep learning algorithms into pure C/C++ for Intel i3 CPUs without GPU acceleration.
-The production system was officially deployed in Shanghai Subway Line 5.
+<li>Attention Mechanisms</li>
 
-</div>
-
-<div class="highlight">
-
-<strong>Solitorch (Co-founder & CTO)</strong><br><br>
-
-Designed ultra-lightweight smart water meter recognition systems under strict edge-device power constraints.
-Compressed neural network size from 15M parameters down to 0.3M while maintaining 99.9% recognition accuracy.
-Successfully deployed onto low-cost AI edge chips.
-
-</div>
+</ul>
 
 </section>
 
@@ -442,6 +410,73 @@ Optimized embedded AI systems using Python and C/C++
 </li>
 
 </ul>
+
+</section>
+
+<!-- INDUSTRIAL -->
+<section class="section">
+
+<h3>Selected Industrial Contributions</h3>
+
+<div class="highlight">
+
+<strong>Moffett AI</strong><br><br>
+
+Led sparse AI optimization and data architecture for sparse acceleration platforms.
+Developed block-based parameter separation algorithms combined with Knowledge Distillation,
+achieving significant acceleration for neural network training and inference.
+The sparse AI chips were integrated into high-performance servers from Inspur.
+
+</div>
+
+<div class="highlight">
+
+<strong>Chaoyang Semiconductor</strong><br><br>
+
+Served as System AI Architect to optimize RAM sizing and power consumption for AI chips.
+The optimized chips were commercialized at large scale and deployed in products from Transsion.
+
+</div>
+
+<div class="highlight">
+
+<strong>Shanghai Electric</strong><br><br>
+
+Independently developed and productionized an automated subway meter recognition system.
+Manually optimized deep learning algorithms into pure C/C++ for Intel i3 CPUs without GPU acceleration.
+The production system was officially deployed in Shanghai Subway Line 5.
+
+</div>
+
+<div class="highlight">
+
+<strong>Solitorch (Co-founder & CTO)</strong><br><br>
+
+Compressed neural network size from 15M parameters down to 0.3M
+while maintaining 99.9% recognition accuracy for low-power smart water meter systems.
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+
+<h3>Email & Whatsapp</h3>
+
+<div class="contact-item">
+<span class="contact-label">Email:</span>
+<a href="mailto:dpstill@126.com">
+dpstill@126.com
+</a>
+</div>
+
+<div class="contact-item">
+<span class="contact-label">Whatsapp:</span>
+<span>
+Please contact via email first.
+</span>
+</div>
 
 </section>
 
