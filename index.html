@@ -1,127 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zhiqiang Liang | AI Researcher</title>
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f3f6fa;
+    color:#222;
+    line-height:1.75;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    text-align:center;
+
+    /* 顶部空白控制 */
+    padding-top:32px;
+    padding-bottom:28px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:6px;
+    font-weight:700;
+}
+
+.hero h2{
+    font-size:1.2rem;
+    font-weight:400;
+    color:#cbd5e1;
+    margin-bottom:6px;
+}
+
+.hero p{
+    color:#94a3b8;
+    font-size:1rem;
+}
+
+/* ===== LAYOUT ===== */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section{
+    background:white;
+    margin-top:24px;
+    padding:32px;
+    border-radius:14px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.06);
+}
+
+.section h3{
+    font-size:1.7rem;
+    margin-bottom:18px;
+    color:#0f172a;
+    border-bottom:2px solid #e2e8f0;
+    padding-bottom:8px;
+}
+
+.section p{
+    margin-bottom:16px;
+}
+
+.section ul{
+    padding-left:22px;
+}
+
+.section li{
+    margin-bottom:12px;
+}
+
+.highlight{
+    background:#f8fafc;
+    border-left:4px solid #0a66c2;
+    padding:18px;
+    margin-bottom:18px;
+    border-radius:8px;
+}
+
+.links a{
+    display:inline-block;
+    margin-right:18px;
+    margin-bottom:12px;
+    color:#0a66c2;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#64748b;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.2rem;
     }
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f5f7fa;
-        color: #222;
-        line-height: 1.7;
+    .hero h2{
+        font-size:1rem;
     }
 
-    a {
-        color: #0a66c2;
-        text-decoration: none;
+    .section{
+        padding:24px;
     }
 
-    a:hover {
-        text-decoration: underline;
-    }
+}
 
-    .container {
-        width: 90%;
-        max-width: 1100px;
-        margin: auto;
-    }
-
-    /* ===== HERO SECTION ===== */
-    .hero {
-        background: linear-gradient(135deg, #0f172a, #1e293b);
-        color: white;
-
-        /* 这里控制顶部空白 */
-        padding-top: 38px;
-        padding-bottom: 32px;
-
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 3rem;
-        margin-bottom: 6px;
-        font-weight: 700;
-    }
-
-    .hero h2 {
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: #cbd5e1;
-        margin-bottom: 6px;
-    }
-
-    .hero p {
-        color: #94a3b8;
-        font-size: 1rem;
-    }
-
-    /* ===== CONTENT ===== */
-    .section {
-        background: white;
-        margin-top: 24px;
-        padding: 32px;
-        border-radius: 12px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-    }
-
-    .section h3 {
-        font-size: 1.6rem;
-        margin-bottom: 18px;
-        color: #0f172a;
-        border-bottom: 2px solid #e2e8f0;
-        padding-bottom: 8px;
-    }
-
-    .section ul {
-        padding-left: 22px;
-    }
-
-    .section li {
-        margin-bottom: 12px;
-    }
-
-    .links a {
-        display: inline-block;
-        margin-right: 18px;
-        margin-bottom: 10px;
-    }
-
-    .highlight {
-        background: #f8fafc;
-        padding: 18px;
-        border-left: 4px solid #0a66c2;
-        margin-bottom: 20px;
-        border-radius: 8px;
-    }
-
-    footer {
-        text-align: center;
-        padding: 30px;
-        color: #64748b;
-    }
-
-    @media (max-width: 768px) {
-        .hero h1 {
-            font-size: 2.2rem;
-        }
-
-        .hero h2 {
-            font-size: 1rem;
-        }
-
-        .section {
-            padding: 24px;
-        }
-    }
 </style>
 </head>
 
@@ -131,176 +140,244 @@
 <section class="hero">
     <div class="container">
         <h1>Zhiqiang Liang</h1>
+
         <h2>
             AI Researcher | Edge AI Architect | Deep Learning Engineer
         </h2>
-        <p>Formerly at Intel Corporation</p>
+
+        <p>
+            Formerly at Intel Corporation
+        </p>
     </div>
 </section>
 
 <div class="container">
 
-    <!-- ABOUT -->
-    <section class="section">
-        <h3>About Me</h3>
+<!-- ABOUT -->
+<section class="section">
 
-        <p>
-            Ph.D. in Communication and Information Systems from the Chinese Academy of Sciences.
-            Experienced in Deep Learning, Edge AI, TinyML, Sparse AI, Embedded AI systems,
-            and Large Language Models.
-        </p>
+<h3>About Me</h3>
 
-        <br>
+<p>
+I received my Ph.D. in Communication and Information Systems from the Chinese Academy of Sciences and my Bachelor degree in Telecommunication Engineering from Wuhan University.
+</p>
 
-        <p>
-            I have worked on commercial AI systems across Intel, Moffett AI,
-            Shanghai Electric, Chaoyang Semiconductor, and startup environments,
-            focusing on model compression, embedded deployment, sparse computing,
-            gesture recognition, and low-power AI acceleration.
-        </p>
-    </section>
+<p>
+My research and engineering experience spans Deep Learning, Large Language Models (LLM), Edge AI, TinyML, Sparse AI, Embedded Machine Learning, Gesture Recognition, and low-power AI acceleration systems.
+</p>
 
-    <!-- EXPERIENCE -->
-    <section class="section">
-        <h3>Selected Industrial Contributions</h3>
+<p>
+I previously worked at Intel Shanghai as a Senior Algorithms Engineer, focusing on wearable-device gesture recognition, deep learning algorithms, computer vision, and embedded AI optimization using Python and C/C++.
+</p>
 
-        <div class="highlight">
-            <strong>Moffett AI</strong><br>
-            Led sparse AI optimization and block-based parameter separation algorithms
-            with Knowledge Distillation for high-speed neural network training/inference.
-        </div>
+<p>
+I have also led and commercialized multiple industrial AI systems across Moffett AI, Chaoyang Semiconductor, Shanghai Electric, and startup environments, including sparse neural network acceleration, AI chip optimization, subway infrastructure AI systems, and ultra-lightweight edge AI deployments.
+</p>
 
-        <div class="highlight">
-            <strong>Chaoyang Semiconductor</strong><br>
-            Designed AI algorithms for RAM/power optimization and chip cost reduction.
-            Commercialized at large scale with Transsion smartphones.
-        </div>
+<p>
+I am available for academic reviewing and technical collaboration in Deep Learning, Machine Learning, NLP, Large Language Models, Attention mechanisms, Edge AI, TinyML, Sparse AI, and Embedded AI systems.
+</p>
 
-        <div class="highlight">
-            <strong>Shanghai Electric</strong><br>
-            Developed automated subway meter recognition systems optimized for Intel i3 CPUs
-            without GPU acceleration. Deployed in Shanghai Subway Line 5.
-        </div>
+</section>
 
-        <div class="highlight">
-            <strong>Solitorch (Co-founder & CTO)</strong><br>
-            Reduced neural network size from 15M parameters to 0.3M while maintaining
-            99.9% recognition accuracy for low-power smart water meters.
-        </div>
-    </section>
+<!-- INDUSTRIAL CONTRIBUTIONS -->
+<section class="section">
 
-    <!-- EDUCATION -->
-    <section class="section">
-        <h3>Education</h3>
+<h3>Selected Industrial Contributions</h3>
 
-        <ul>
-            <li>
-                <strong>Chinese Academy of Sciences</strong><br>
-                Ph.D. in Communication and Information Systems (2004–2009)
-            </li>
+<div class="highlight">
+<strong>Moffett AI</strong><br><br>
 
-            <li>
-                <strong>Wuhan University</strong><br>
-                Bachelor Degree in Telecommunication Engineering (2000–2004)
-            </li>
-        </ul>
-    </section>
+Led sparse AI optimization and data architecture for sparse acceleration platforms.
+Developed block-based parameter separation algorithms combined with Knowledge Distillation,
+achieving significant acceleration for neural network training and inference.
+The sparse AI chips were integrated into high-performance servers from Inspur.
+</div>
 
-    <!-- PUBLICATIONS -->
-    <section class="section">
-        <h3>Selected Publications & Patents</h3>
+<div class="highlight">
+<strong>Chaoyang Semiconductor</strong><br><br>
 
-        <ul>
-            <li>
-                The Statistical Meaning of Kurtosis and Its New Application
-                to Identification of Persons Based on Seismic Signals (Sensors, SCI)
-            </li>
+Served as System AI Architect to optimize RAM sizing and power consumption for AI chips.
+The optimized chips were commercialized at large scale and deployed in products from Transsion,
+one of the largest smartphone vendors in Africa.
+</div>
 
-            <li>
-                Time Domain Feature Transform for User Defined Gestures
-                on Wearable Devices (Intel Patent)
-            </li>
+<div class="highlight">
+<strong>Shanghai Electric</strong><br><br>
 
-            <li>
-                Technologies for Adaptive Downsampling for Gesture Recognition
-                (Intel Patent)
-            </li>
+Independently developed and productionized an automated subway meter recognition system.
+Manually optimized deep learning algorithms into pure C/C++ for Intel i3 CPUs without GPU acceleration.
+The production system was officially deployed in Shanghai Subway Line 5.
+</div>
 
-            <li>
-                Energy Efficient and Robust CSIP Algorithm in Distributed
-                Wireless Sensor Networks
-            </li>
-        </ul>
-    </section>
+<div class="highlight">
+<strong>Solitorch (Co-founder & CTO)</strong><br><br>
 
-    <!-- RESEARCH -->
-    <section class="section">
-        <h3>Research Interests</h3>
+Designed ultra-lightweight smart water meter recognition systems under strict edge-device power constraints.
+Compressed neural network size from 15M parameters down to 0.3M while maintaining 99.9% recognition accuracy.
+Successfully deployed onto low-cost AI edge chips.
+</div>
 
-        <ul>
-            <li>Deep Learning</li>
-            <li>Large Language Models (LLM)</li>
-            <li>Edge AI & TinyML</li>
-            <li>Sparse AI</li>
-            <li>Embedded Machine Learning</li>
-            <li>Gesture Recognition</li>
-            <li>Attention Mechanisms</li>
-            <li>Natural Language Processing</li>
-        </ul>
-    </section>
+</section>
 
-    <!-- EXPERIENCE -->
-    <section class="section">
-        <h3>Work Experience</h3>
+<!-- EDUCATION -->
+<section class="section">
 
-        <p>
-            <strong>Senior Algorithms Engineer — Intel Shanghai</strong><br>
-            August 2014 – March 2017
-        </p>
+<h3>Education</h3>
 
-        <br>
+<ul>
 
-        <ul>
-            <li>Developed deep learning and pattern recognition algorithms</li>
-            <li>Built wearable-device gesture recognition systems</li>
-            <li>Implemented computer vision algorithms on head-worn devices</li>
-            <li>Worked with Python and C/C++ optimization</li>
-        </ul>
-    </section>
+<li>
+<strong>Chinese Academy of Sciences</strong><br>
+Ph.D. in Communication and Information Systems (2004–2009)
+</li>
 
-    <!-- CONTACT -->
-    <section class="section">
-        <h3>Links & Contact</h3>
+<li>
+<strong>Wuhan University</strong><br>
+Bachelor Degree in Telecommunication Engineering (2000–2004)
+</li>
 
-        <div class="links">
-            <a href="mailto:dpstill@126.com">Email</a>
+</ul>
 
-            <a href="https://www.linkedin.com/in/ardeal-zhiqiang-liang-0a89475b" target="_blank">
-                LinkedIn
-            </a>
+</section>
 
-            <a href="https://scholar.google.com/citations?user=MBUyHUAAAAAJ&hl=en" target="_blank">
-                Google Scholar
-            </a>
+<!-- WORK EXPERIENCE -->
+<section class="section">
 
-            <a href="https://dblp.org/pid/64/273.html" target="_blank">
-                DBLP
-            </a>
+<h3>Work Experience</h3>
 
-            <a href="https://orcid.org/0009-0003-6210-8615" target="_blank">
-                ORCID
-            </a>
+<p>
+<strong>Senior Algorithms Engineer — Intel Shanghai</strong><br>
+August 2014 – March 2017
+</p>
 
-            <a href="https://www.semanticscholar.org/author/Zhiqiang-Liang/2113515477" target="_blank">
-                Semantic Scholar
-            </a>
-        </div>
-    </section>
+<ul>
+
+<li>
+Worked in Intel NDG Shanghai focusing on advanced AI algorithm development
+</li>
+
+<li>
+Developed gesture recognition algorithms using Accelerometer and Gyroscope sensors
+</li>
+
+<li>
+Implemented computer vision algorithms on head-worn wearable devices
+</li>
+
+<li>
+Optimized embedded AI systems using Python and C/C++
+</li>
+
+</ul>
+
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section">
+
+<h3>Selected Publications & Patents</h3>
+
+<ul>
+
+<li>
+The Statistical Meaning of Kurtosis and Its New Application to Identification of Persons Based on Seismic Signals (Sensors, SCI indexed)
+</li>
+
+<li>
+Time Domain Feature Transform for User Defined Gestures on Wearable Devices (Intel Patent)
+</li>
+
+<li>
+Technologies for Adaptive Downsampling for Gesture Recognition (Intel Patent)
+</li>
+
+<li>
+Energy Efficient and Robust CSIP Algorithm in Distributed Wireless Sensor Networks
+</li>
+
+<li>
+Generalized Hand Gesture Recognition for Wearable Devices in IoT
+</li>
+
+</ul>
+
+</section>
+
+<!-- RESEARCH -->
+<section class="section">
+
+<h3>Research Interests</h3>
+
+<ul>
+
+<li>Deep Learning</li>
+
+<li>Machine Learning</li>
+
+<li>Large Language Models (LLM)</li>
+
+<li>Natural Language Processing (NLP)</li>
+
+<li>Edge AI</li>
+
+<li>TinyML</li>
+
+<li>Sparse AI</li>
+
+<li>Embedded Machine Learning</li>
+
+<li>Gesture Recognition</li>
+
+<li>Attention Mechanisms</li>
+
+</ul>
+
+</section>
+
+<!-- LINKS -->
+<section class="section">
+
+<h3>Links & Contact</h3>
+
+<div class="links">
+
+<a href="mailto:dpstill@126.com">
+Email
+</a>
+
+<a href="https://www.linkedin.com/in/ardeal-zhiqiang-liang-0a89475b" target="_blank">
+LinkedIn
+</a>
+
+<a href="https://scholar.google.com/citations?user=MBUyHUAAAAAJ&hl=en" target="_blank">
+Google Scholar
+</a>
+
+<a href="https://dblp.org/pid/64/273.html" target="_blank">
+DBLP
+</a>
+
+<a href="https://orcid.org/0009-0003-6210-8615" target="_blank">
+ORCID
+</a>
+
+<a href="https://www.semanticscholar.org/author/Zhiqiang-Liang/2113515477" target="_blank">
+Semantic Scholar
+</a>
+
+</div>
+
+<p>
+Email: dpstill@126.com
+</p>
+
+</section>
 
 </div>
 
 <footer>
-    © 2026 Zhiqiang Liang | AI Researcher & Edge AI Architect
+© 2026 Zhiqiang Liang | AI Researcher | Edge AI Architect
 </footer>
 
 </body>
